@@ -4,7 +4,11 @@ import React from 'react';
 function SubmitName(props) {
 
     return (
-        <h3>HEEELoo from submit</h3>
+        <div className="submitName-container">
+            <input
+                className="submitName-container__input"
+                placeholder="Username + Enter" />        
+        </div>
     )
 }
 

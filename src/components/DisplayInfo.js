@@ -1,11 +1,17 @@
 import React from 'react';
 
+import Avatar from './displayInfoComponents/Avatar';
+import Stats from './displayInfoComponents/Stats';
+
 
 
 function DisplayInfo(props) {
 
     return (
-        <h3>Hello from display</h3>
+        <div className="displayInfo-container">
+            <Avatar />
+            <Stats />
+        </div>
     )
 }
 

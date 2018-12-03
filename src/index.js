@@ -23,6 +23,7 @@ class App extends React.Component {
                 <SubmitName>
 
                 </SubmitName>
+                
                 <DisplayInfo>
 
                 </DisplayInfo>
