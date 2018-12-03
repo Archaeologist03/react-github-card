@@ -1,12 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './scss/main.scss';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import SubmitName from './components/SubmitName';
+import DisplayInfo from './components/DisplayInfo';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+
+        };
+    }
+
+    render() {
+        return (
+            <div 
+                className="container">
+                <SubmitName>
+
+                </SubmitName>
+                <DisplayInfo>
+
+                </DisplayInfo>
+            </div>
+        )
+    }
+}
+
+
+ReactDOM.render(
+    <App/>,
+    document.querySelector("#root")
+)
