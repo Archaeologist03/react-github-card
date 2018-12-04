@@ -7,7 +7,11 @@ function SubmitName(props) {
         <div className="submitName-container">
             <input
                 className="submitName-container__input"
-                placeholder="Username + Enter" />        
+                placeholder="Username + Enter" 
+                value={props.inputText}
+                onChange={props.InputChange}
+                onKeyPress={props.InputEnter}
+                />
         </div>
     )
 }

@@ -19,33 +19,79 @@ class App extends React.Component {
             fallowers: null,
             fallowing: null,
             public_repos: null,
-            url: ""  
+            url: "",
+            inputText: "archaeologist03", 
         };
+
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleEnterKey = this.handleEnterKey.bind(this);
+
+
+        
     }
 
     // Fetch data obj, destructure it and setState to new values from fetched obj
     componentDidMount() {
-        getApiData().then(data => {
-            let {login, avatar_url, bio, fallowers, fallowing, public_repos, url} = data;
-            this.setState({
-                login,
-                avatar_url,
-                bio,
-                fallowers,
-                fallowing,
-                public_repos,
-                url,
-            })
-        });
+        if (this.state.login) {
+            getApiData(this.state.login).then(data => {
+                let {login, avatar_url, bio, fallowers, fallowing, public_repos, url} = data;
+                this.setState({
+                    login,
+                    avatar_url,
+                    bio,
+                    fallowers,
+                    fallowing,
+                    public_repos,
+                    url,
+                })
+            });
+        }
+    }
 
+
+    handleInputChange(e) {
+        let text = e.target.value;
+        this.setState({
+            inputText: text,
+            login: text,
+        })
+    }
+
+    handleEnterKey(e) {        
+        if (e.key === 'Enter') {
+            this.setState({
+                login: this.state.inputText,
+            })
+        }
+        if (this.state.login && e.key === 'Enter') {
+            getApiData(this.state.login).then(data => {
+                let {login, avatar_url, bio, fallowers, fallowing, public_repos, url} = data;
+                this.setState({
+                    login,
+                    avatar_url,
+                    bio,
+                    fallowers,
+                    fallowing,
+                    public_repos,
+                    url,
+                })
+            });
+        }
     }
 
     render() {
         console.log(this.state.login);
+        console.log(this.state.public_repos);
+        console.log(this.state.bio);
+
+
         return (
             <div 
                 className="container">
-                <SubmitName>
+                <SubmitName 
+                    inputText={this.state.inputText}
+                    InputChange={this.handleInputChange}
+                    InputEnter={this.handleEnterKey}>
 
                 </SubmitName>
                 
