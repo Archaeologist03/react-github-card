@@ -8,9 +8,16 @@ import Stats from './displayInfoComponents/Stats';
 function DisplayInfo(props) {
 
     return (
+
         <div className="displayInfo-container">
-            <Avatar />
-            <Stats />
+            {props.mainState.message ? 
+                <p style={{textAlign: "center"}}>User {props.mainState.message}</p> 
+                :
+                <>
+                    <Avatar mainState={props.mainState} />
+                    <Stats mainState={props.mainState} />
+                </>
+            }     
         </div>
     )
 }

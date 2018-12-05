@@ -5,9 +5,9 @@ function Avatar(props) {
         // TODO --- figure out what to do with classes for reusability
     return(
         <div className="displayInfo-container__avatar-container">
-            <img alt="github profile pic"/>
-            <h3 className="displayInfo-container__avatar-container__name">Name</h3>
-            <h4 className="displayInfo-container__avatar-container__place">Place..</h4>
+            <img alt="github profile pic" src={props.mainState.avatar_url}/>
+            <h3 className="displayInfo-container__avatar-container__name">{props.mainState.login}</h3>
+            <h4 className="displayInfo-container__avatar-container__bio">{props.mainState.bio}</h4>
         </div>
     )
 }

@@ -12,3 +12,22 @@
 div {
     border: 2px solid gray;
 }
+
+
+.displayInfo-container {
+
+
+    &__avatar-container {
+        border: 2px solid red;
+
+        img {
+            border: 2px solid gold;
+            display: inline-block;
+            width: 30%;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 50%;
+            transform: translateX(-50%)
+        }
+    }
+}

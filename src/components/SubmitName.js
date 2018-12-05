@@ -6,9 +6,9 @@ function SubmitName(props) {
     return (
         <div className="submitName-container">
             <input
+                autoFocus={true}
                 className="submitName-container__input"
                 placeholder="Username + Enter" 
-                value={props.inputText}
                 onChange={props.InputChange}
                 onKeyPress={props.InputEnter}
                 />
