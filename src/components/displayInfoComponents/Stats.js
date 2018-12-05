@@ -7,13 +7,16 @@ function Stats(props) {
     return (      
         <div className="displayInfo-container__stats-container">
             <div className="displayInfo-container__stats-container__followers-container">
-                fallowers: {props.mainState.followers}
+                <p className="statsNumbers">{props.mainState.followers}</p>
+                <p className="statsText">fallowers</p>
             </div>
-            <div className="displayInfo-container__stats-container__repo-container">
-                repos: {props.mainState.public_repos}
+            <div className="displayInfo-container__stats-container__repos-container">
+                <p className="statsNumbers">{props.mainState.public_repos}</p>
+                <p className="statsText">repos</p>
             </div>
             <div className="displayInfo-container__stats-container__following-container">
-                following: {props.mainState.following}
+                <p className="statsNumbers">{props.mainState.followers}</p>
+                <p className="statsText">following</p>
             </div>
         </div>
     )

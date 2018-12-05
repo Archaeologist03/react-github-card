@@ -19,6 +19,7 @@ class App extends React.Component {
             following: null,
             public_repos: null,
             url: "",
+            name: "",
             message: "",
             inputText: "archaeologist03",
             enterPressed: false,
@@ -33,7 +34,7 @@ class App extends React.Component {
     componentDidMount() {
         // if (this.state.login) {
             getApiData(this.state.inputText).then(data => {
-                let {login, avatar_url, bio, followers, following, public_repos, url} = data;
+                let {login, avatar_url, bio, followers, following, public_repos, url, name} = data;
                 this.setState({
                     login,
                     avatar_url,
@@ -42,6 +43,7 @@ class App extends React.Component {
                     following,
                     public_repos,
                     url,
+                    name,
                 })
             });
         // }
@@ -56,6 +58,7 @@ class App extends React.Component {
     }
 
 
+
     handleInputChange(e) {
         let text = e.target.value;
         this.setState({
@@ -67,7 +70,7 @@ class App extends React.Component {
         let readyForChange = () => {
             if (this.state.login) {
                 getApiData(this.state.login).then(data => {
-                    let {login, avatar_url, bio, followers, following, public_repos, url, message} = data;
+                    let {login, avatar_url, bio, followers, following, public_repos, url, name, message} = data;
                     console.log(data);
                     this.setState({
                         login,
@@ -77,6 +80,7 @@ class App extends React.Component {
                         following,
                         public_repos,
                         url,
+                        name,
                         message,
                     });
 

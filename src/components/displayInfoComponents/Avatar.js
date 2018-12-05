@@ -6,8 +6,8 @@ function Avatar(props) {
     return(
         <div className="displayInfo-container__avatar-container">
             <img alt="github profile pic" src={props.mainState.avatar_url}/>
-            <h3 className="displayInfo-container__avatar-container__name">{props.mainState.login}</h3>
-            <h4 className="displayInfo-container__avatar-container__bio">{props.mainState.bio}</h4>
+            <h3 className="displayInfo-container__avatar-container__name">{props.mainState.name}</h3>
+            <h3 className="displayInfo-container__avatar-container__bio">{props.mainState.bio}</h3>
         </div>
     )
 }
