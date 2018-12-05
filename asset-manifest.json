@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-gh-pages/static/css/main.289b4c64.chunk.css",
-  "main.js": "/react-gh-pages/static/js/main.c2d4c983.chunk.js",
-  "main.js.map": "/react-gh-pages/static/js/main.c2d4c983.chunk.js.map",
-  "static/js/1.f59dae82.chunk.js": "/react-gh-pages/static/js/1.f59dae82.chunk.js",
-  "static/js/1.f59dae82.chunk.js.map": "/react-gh-pages/static/js/1.f59dae82.chunk.js.map",
-  "runtime~main.js": "/react-gh-pages/static/js/runtime~main.346eb3ee.js",
-  "runtime~main.js.map": "/react-gh-pages/static/js/runtime~main.346eb3ee.js.map",
-  "static/css/main.289b4c64.chunk.css.map": "/react-gh-pages/static/css/main.289b4c64.chunk.css.map",
-  "index.html": "/react-gh-pages/index.html",
-  "precache-manifest.bd8d85f39be1ae7cea2e696337983e5d.js": "/react-gh-pages/precache-manifest.bd8d85f39be1ae7cea2e696337983e5d.js",
-  "service-worker.js": "/react-gh-pages/service-worker.js"
+  "main.css": "/react-github-card/static/css/main.289b4c64.chunk.css",
+  "main.js": "/react-github-card/static/js/main.c2d4c983.chunk.js",
+  "main.js.map": "/react-github-card/static/js/main.c2d4c983.chunk.js.map",
+  "static/js/1.f59dae82.chunk.js": "/react-github-card/static/js/1.f59dae82.chunk.js",
+  "static/js/1.f59dae82.chunk.js.map": "/react-github-card/static/js/1.f59dae82.chunk.js.map",
+  "runtime~main.js": "/react-github-card/static/js/runtime~main.0a7192d6.js",
+  "runtime~main.js.map": "/react-github-card/static/js/runtime~main.0a7192d6.js.map",
+  "static/css/main.289b4c64.chunk.css.map": "/react-github-card/static/css/main.289b4c64.chunk.css.map",
+  "index.html": "/react-github-card/index.html",
+  "precache-manifest.29e942deb031eb19b06dfb9b1f9c9d71.js": "/react-github-card/precache-manifest.29e942deb031eb19b06dfb9b1f9c9d71.js",
+  "service-worker.js": "/react-github-card/service-worker.js"
 }
